@@ -1,0 +1,40 @@
+:root {
+    --black-color: #222222;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--black-color);
+    height: 75px;
+    position: relative;
+}
+.header_logo {
+margin: 0 41px 0 0;
+}
+
+.header_button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 0 0 0;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.header_menu-list,
+.header_wrp {
+    display: flex;
+    align-items: center;
+}
+.header_menu-item:not(:last-child){
+    margin: 0 33px 0 0;
+}
+.header_navigation {
+    position: absolute;
+    display: none;
+}
