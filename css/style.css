@@ -1,6 +1,9 @@
 :root {
     --black-color: #222222;
 }
+body {
+    font-family: 'Lato', sans-serif;
+}
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -37,4 +40,84 @@ margin: 0 41px 0 0;
 .header_navigation {
     position: absolute;
     display: none;
+    width: 232px;
+    height: 764px;
+    left: 1368px;
+    top: 75px;
+    background: #FFFFFF;
+
+    
+}
+.header_navigation-title {
+    width: 55px;
+    height: 17px;
+    left: 1402px;
+    top: 112px;
+}
+.header__navigation-item {
+    color: #F16D7F;
+    width: 82px;
+    height: 17px;
+    left: 1401px;
+    top: 303px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.header__navigation-sub-list-link {
+    text-decoration: none;
+    width: 79.4px;
+    height: 17px;
+    left: 1422.5px;
+    top: 332px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    
+}
+.name {
+    background: #F1E4E6;
+    display: flex;
+    
+}
+.name-title {
+    width:100%;
+    padding-top: 335px;
+}
+.name-title-content {
+    font-weight: 900;
+    font-size: 48px;
+    color: #222222;
+    width: 377px;
+    text-transform: uppercase;
+    height: 93px;
+   margin-left: 92px;
+   
+}
+.name-title-content::before {
+    position: absolute;
+    content:url(../img/stick.svg);
+    color:#F16D7F;
+    width: 12px;
+    height: 100%;
+    left:867px;
+    top:412px;
+    
+    
+   
+
+}
+.name-title-span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #222222;
+    text-transform: uppercase;
+  
+}
+.name-title-span-pink {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color:#F16D7F;
+    text-transform: uppercase;
 }
