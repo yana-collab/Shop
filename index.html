@@ -37,11 +37,11 @@
                     </svg>
             </button></li>
         </ul>
-        <nav class="header_navigation">
-            <p class="header_navigation-title">MENU</p>
-            <ul>
-                <li class="header__navigation-item">
-                    <p class="header__navigation-item">MAN</p>
+        <nav class="header__navigation">
+            <p class="header__navigation-title">MENU</p>
+            <ul class="header__navigation-list">
+                <li class="header__navigation-list-item">
+                    <p class="header__navigation-list-title">MAN</p>
                     <ul class="header__navigation-sub-list">
                         <li class="header__navigation-sub-list-title">
                             <a class="header__navigation-sub-list-link" href="#">Accessories</a></li>
@@ -53,13 +53,13 @@
                                         <a class="header__navigation-sub-list-link" href="#">T-Shirts</a></li>
                     </ul>
                 </li>
-                <li class="header__navigation-item">
-                    <p class="header__navigation-item">WOMAN</p>
+                <li class="header__navigation-list-item">
+                    <p class="header__navigation-list-title">WOMAN</p>
                     <ul class="header__navigation-sub-list">
                         <li class="header__navigation-sub-list-title">
                             <a class="header__navigation-sub-list-link" href="#">Accessories</a></li>
                             <li class="header__navigation-sub-list-title">
-                                <a class="header__navigation-sub-list-link" href="#">Jackets & Coats</a></li>
+                                <a class="header__navigation-sub-list-link" href="#">Jackets&amp;Coats</a></li>
                                 <li class="header__navigation-sub-list-title">
                                     <a class="header__navigation-sub-list-link" href="#">Polos</a></li>
                                     <li class="header__navigation-sub-list-title">
@@ -68,13 +68,13 @@
                                             <a class="header__navigation-sub-list-link" href="#">Shirts</a></li>
                     </ul>
                 </li>
-                <li class="header__navigation-item">
-                    <p class="header__navigation-item">KIDS</p>
+                <li class="header__navigation-list-item">
+                    <p class="header__navigation-list-title">KIDS</p>
                     <ul class="header__navigation-sub-list">
                         <li class="header__navigation-sub-list-title">
                             <a class="header__navigation-sub-list-link" href="#">Accessories</a></li>
                             <li class="header__navigation-sub-list-title">
-                                <a class="header__navigation-sub-list-link" href="#">Jackets & Coats</a></li>
+                                <a class="header__navigation-sub-list-link" href="#">Jackets&amp;Coats</a></li>
                                 <li class="header__navigation-sub-list-title">
                                     <a class="header__navigation-sub-list-link" href="#">Polos</a></li>
                                     <li class="header__navigation-sub-list-title">
@@ -91,11 +91,112 @@
   </header> 
   <main>
       <section class="name">
-          <img src="img/namebg.jpg" alt="мужчина в пальто" class="name img" width="800" height="765">
-          <div class="name-title">
-              <h1 class="name-title-content">THE BRAND<br><span class="name-title-span">OF LUXERIOUS</span>
-                <span class="name-title-span-pink">FASHION</span> </h1>
+          <img src="img/namebg.jpg" alt="мужчина в пальто" class="name__img" width="800" height="765">
+          <div class="name__title">
+              <h1 class="name__title-content">THE BRAND<br><span class="name__title-span">OF LUXERIOUS</span>
+                <span class="name__title-span name__title-span-pink">FASHION</span> </h1>
           </div>
+      </section>
+      <section class="sale container">
+         <h2 class="visually-hidden">Акции</h2>
+         <ul class="sale__list">
+             <li class="sale__item">
+                 <div class="sale__item-content">
+                     <p class="sale__item-name">30% OFF</p>
+                     <p class="sale__item-category">FOR WOMEN</p>
+                 </div>
+             </li>
+             <li class="sale__item sale__item--second">
+                <div class="sale__item-content">
+                    <p class="sale__item-name">HOT DEAL</p>
+                    <p class="sale__item-category">FOR MEN</p>
+                </div>
+            </li>
+            <li class="sale__item sale__item--third">
+                <div class="sale__item-content">
+                    <p class="sale__item-name">NEW ARRIVALS</p>
+                    <p class="sale__item-category">FOR KIDS</p>
+                </div>
+            </li>
+            <li class="sale__item sale__item--last">
+                <div class="sale__item-content sale__item-content--last">
+                    <p class="sale__item-name sale__item-name--last">LUXIROUS &amp; TRENDY</p>
+                    <p class="sale__item-category">ACCESORIES</p>
+                </div>
+            </li>
+         </ul>
+      </section>
+      <section class="features container">
+          <h3 class="features__title">Fetured Items</h3>
+          <p class="features__description">Shop for items based on what we featured in this week</p>
+          <ul class="features__list">
+              <li class="fetures__item">
+                  <div class="fetures__item-content">
+                      <img src="img/features_man.jpg" alt="Мужчина в куртке" class="features__item-img">
+                      <h4 class="features__item-title">ELLERY X M'O CAPSULE</h4>
+                      <p class="features__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                      <p class="features__item-price">$52.00</p>
+                  </div>
+              </li>
+              <li class="fetures__item">
+                <div class="fetures__item-content">
+                    <img src="img/featuresgirl.jpg" alt="Девушка в костюме" class="features__item-img">
+                    <h4 class="features__item-title">ELLERY X M'O CAPSULE</h4>
+                    <p class="features__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="features__item-price">$52.00</p>
+                </div>
+            </li>
+            <li class="fetures__item">
+                <div class="fetures__item-content">
+                    <img src="img/featuresboy.jpg" alt="Мужчина в шляпе" class="features__item-img">
+                    <h4 class="features__item-title">ELLERY X M'O CAPSULE</h4>
+                    <p class="features__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="features__item-price">$52.00</p>
+                </div>
+            </li>
+            <li class="fetures__item">
+                <div class="fetures__item-content">
+                    <img src="img/featuresmantr.jpg" alt="Мужчина в желтых брюках" class="features__item-img">
+                    <h4 class="features__item-title">ELLERY X M'O CAPSULE</h4>
+                    <p class="features__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="features__item-price">$52.00</p>
+                </div>
+            </li>
+            <li class="fetures__item">
+                <div class="fetures__item-content">
+                    <img src="img/featureswoman.jpg" alt="Женщина в пиджаке" class="features__item-img">
+                    <h4 class="features__item-title">ELLERY X M'O CAPSULE</h4>
+                    <p class="features__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="features__item-price">$52.00</p>
+                </div>
+            </li>
+            <li class="fetures__item">
+                <div class="fetures__item-content">
+                    <img src="img/featuresfungirl.jpg" alt="Женщина в рубашке" class="features__item-img">
+                    <h4 class="features__item-title">ELLERY X M'O CAPSULE</h4>
+                    <p class="features__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="features__item-price">$52.00</p>
+                </div>
+            </li>
+          </ul>
+          <button class="features__button">Browse All Product</button>
+      </section>
+      <section class="advantages ">
+        <div class="advantages__content">
+            <img src="img/delivery.svg" alt="Доставка" class="advantages__icon">
+            <h4 class="advantages__title">Free Delivery</h4>
+            <p class="advantages__description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+        <div class="advantages__content">
+            <img src="img/sale.svg" alt="Скидки" class="advantages__icon advantages__icon--sale">
+            <h4 class="advantages__title">Sales &amp; discounts</h4>
+            <p class="advantages__description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+        <div class="dvantages__content ">
+            <img src="img/quality.svg" alt="Качество" class="advantages__icon">
+            <h4 class="advantages__title">Quality assurance</h4>
+            <p class="advantages__description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
       </section>
   </main> 
   <footer></footer>
