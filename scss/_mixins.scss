@@ -1,0 +1,11 @@
+@mixin font($font-size, $line-height, $font-weight, $font-style: normal) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  @mixin cardsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }

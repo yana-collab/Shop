@@ -1,0 +1,54 @@
+.features__title {
+    padding-top: 97px;
+    font-size: 30px;
+    line-height: 36px;
+    color:$black-color;
+    text-align: center;
+    font-weight: 400;
+}
+.features__description {
+    color: $grey-color-des;
+    @include font (14px, 17px,400);
+    text-align: center;
+    padding-bottom: 28px;
+}
+.features__list {
+    @include cardsWrap;
+}
+.features__item-content {
+    width: 360px;
+    height: 581px;
+    background:$white-color;
+}
+.features__item {
+    padding: 20px 0;
+}
+.features__item-title {
+    @include font (13px, 16px, 400);
+    color: $black-color;
+    padding-left: 18px;
+    padding-top: 25px;
+}
+.features__item-description {
+    @include font (14px, 17px, 300);
+    color: $grey-color-des;
+    width: 314px;
+    height: 51px;
+    padding-left: 16px;
+    padding-top: 12px;
+}
+.features__item-price {
+    @include font (16px, 19px, 400);
+    color:$pink-color;
+    padding: 18px;
+    
+}
+.features__button {
+    border: 1px solid $pink-color;
+    @include font (16px, 19px, 400);
+    color: $pink-color;
+    background-color:$white-color;
+    padding: 13px 28px;
+    margin-top: 38px;
+    margin-left: 470px;
+}

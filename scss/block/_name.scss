@@ -1,0 +1,36 @@
+.name {
+    background:$pink-bg;
+    display: flex;
+    
+}
+.name__title {
+    width:100%;
+    padding-top: 335px;
+}
+.name__title-content {
+    @include font (48px, 39px, 900);
+    color: $black-color;
+    width: 377px;
+    text-transform: uppercase;
+    height: 93px;
+    margin-left: 92px;
+   
+}
+.name__title-content::before {
+    position: absolute;
+    content:url(../img/stick.svg);
+    color:$pink-color;
+    width: 11px;
+    height: 100%;
+    left:867px;
+    top:402px;
+}
+.name__title-span {
+    @include font (24px, 57px, 700);
+    color:$black-color;
+    text-transform: uppercase;
+  
+}
+.name__title-span-pink {
+    color: $pink-color;
+}
