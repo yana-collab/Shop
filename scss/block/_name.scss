@@ -1,36 +1,77 @@
 .name {
-    background:$pink-bg;
     display: flex;
     
 }
+.name__img {
+    @include tablet {
+        width:50%;
+        height: auto;
+    }
+    @include mobile {
+        display: none;
+    }
+}
 .name__title {
     width:100%;
-    padding-top: 335px;
+    padding:335px 0 0 64px;
+    background:$pink-bg;
+    
+    @include mobile {
+        padding: 148px 56px 149px 83px;
+        
+    }
 }
 .name__title-content {
+    position: relative;
     @include font (48px, 39px, 900);
     color: $black-color;
-    width: 377px;
+    padding: 0 0 0 28px;
     text-transform: uppercase;
-    height: 93px;
-    margin-left: 92px;
+    @include tablet {
+        @include font (44px, 53px,900);
+        padding:0 0 151px 20px;
+    }
+   @include mobile {
+       width: 100%;
+    @include font (38px, 45px,900);
+    
+   }  
    
 }
 .name__title-content::before {
-    position: absolute;
-    content:url(../img/stick.svg);
-    color:$pink-color;
-    width: 11px;
-    height: 100%;
-    left:867px;
-    top:402px;
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 100%;
+        background-color:$pink-color;
+        left: -12px;
+        @include tablet {
+            height: 50%;
+        }
+        @include mobile {
+            height:100%;
+        }
 }
+
 .name__title-span {
     @include font (24px, 57px, 700);
     color:$black-color;
     text-transform: uppercase;
+    @include tablet {
+        @include font (24px, 29px, 700);
+
+    }
+    @include mobile {
+        @include font (20px, 24px, 700);
+
+    }
   
 }
 .name__title-span-pink {
     color: $pink-color;
+    @include mobile {
+        @include font (24px, 29px, 700);
+
+    }
+    
 }

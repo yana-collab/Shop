@@ -2,11 +2,14 @@
     position: relative;
     background-color: $black-color;
     min-height: 75px;
-    &__container {
+    .header__container {
         display: flex;
         align-items: center;
-        height: 100%;
         justify-content: space-between;
+        @include tablet {
+            width:92%;
+        }
+        
     }
 }
 
@@ -34,15 +37,24 @@
     .header_wrp {
         display: flex;
         align-items: center;
+        
     }
     
     .header_menu-item:not(:last-child){
         margin: 0 33px 0 0;
+        
     }
+    .header_menu-item__registration,
+    .header_menu-item__basket {
+        @include mobile {
+            display: none;
+        }
+    }
+
     .header__navigation {
         position: absolute;
         display:none;
-        width: 232px;
+        max-width: 232px;
         height: 764px;
         left: 1368px;
         top: 75px;
@@ -71,7 +83,7 @@
     }
     .header__navigation-list-title {
         color: #F16D7F;
-        width: 82px;
+        max-width: 82px;
         height: 17px;
         left: 1401px;
         top: 303px;

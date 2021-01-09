@@ -1,35 +1,62 @@
 .footer {
-    background-image: url("/img/footer-bg.jpg");
-    min-width: $desktop-width;
-    height: 527px;
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    min-height: 527px;
+    width: 100%;
+    @include tablet {
+        background-image: urlurl('../img/footer-bg.jpg');
+        min-height: 693px;
+        background-size: cover;
+    }
+    @include mobile {
+        background-image: url('../img/footer-bg-mobile.jpg');
+        background-size: cover;
+        min-height: 550px;
+    }
 }
 .footer__content {
     background-color: $footer-bg-grey;
     height: 448px;
-
+    @include tablet {   
+    height: auto;
+    }
+    @include mobile {
+        height: auto;
+    }
 }
 
 .footer__content-item {
     display: flex;
-    justify-content: space-between;
-    
+    @include tablet {   
+        flex-direction: column;
+        align-items: center;
+    }
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+}
 }
 .footer__content-contact {
-    margin-top: 100px;
-    
+    max-width:360px;
+    padding: 87px 223px 126px 0;
+    @include tablet {
+       width: 100%;
+       padding: 53px 0 0 0;
+    }
+    @include mobile {
+        width: 100%;
+        padding: 54px 0 59px 0;
+}
 }
 .footer__content-img {
-    padding-left: 126px;
-    padding-bottom: 30px;
+    padding: 0 0 30px 126px;
     
 }
 .footer__content-text {
-    width: 360px;
-    height: 99px;
+    min-height: 99px;
     @include font (20px, 24px, 400);
     text-align: center;
     color:$footer-bg-black;
-    
     
 }
 .footer__content-italic {
@@ -37,37 +64,63 @@
     font-style: italic;
 }
 .footer__subscribe {
-    margin-top: 160px;
-    margin-left: 327px;
+    padding: 150px 0 156px 200px;
+    max-width:557px;
+    @include tablet {
+        width: 100%;
+        padding: 48px 0 148px 0;
+    }
+    @include mobile {
+        width:100%;
+        padding: 0 0 110px 0;
+        
+}
 }
 .footer__subscribe-title {
+    text-align: center;
     @include font (24px, 38px, 700);
-    width: 557px;
-    height: 31px;
-    padding-left: 103px;
-    padding-bottom: 10px;
+    min-width: 31px;
     text-transform: uppercase;
     color: $footer-bg-black;
-    
+    @include tablet {
+        @include font (24px, 39px,700);
+    }
+    @include mobile {
+       
+    }   
 }
 .footer__subscribe-subtitle {
+    padding: 0 0 32px 0;
+    text-align: center;
     @include font (18px, 30px, 400);
     text-transform: uppercase;
     color:$footer-bg-black;
-    padding-bottom: 32px;
+    @include tablet {
+        @include font (18px, 29px,400);
+    }
+    @include mobile {
+        @include font (14px, 21px, 400);
+    }   
 }
 .footer__subscribe-input {
-    width:322px;
+    width: 256px;
     height: 49px;
     background-color: $bg-input;
     border-radius: 30px 0 0 30px;
     border:none;
+    @include inputTablet {
+        margin: 0 0 0 100px;
+    }
+    @include inputMobile {
+        width: 245px;
+    }
 }
 ::placeholder {
     color:$footer-bg-black;
     @include font (14px, 17px,400);
     opacity:0.6;
     padding-left: 22px;
+    
 }
 .footer__subscribe-button {
     width: 100px;
@@ -80,26 +133,47 @@
     text-align: center;
     @include font(14px,17px,400);
     padding: 1px;
+    @include inputMobile {
+        width: 95px;
+    }
 }
 .footer__privecy {
     background-color: $footer-bg-black;
-    height: 79px;
-    min-width: $desktop-width;
+    min-height: 79px;
+    @include mobile {
+        height: 143px;
+        display: flex;
+       
+    }
 }
 .footer__privacy-content {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    @include tablet {
+        width: 92%;
+    }
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        
+    }
 }
 .footer__privacy-title {
     color:$white-color;
     @include font (16px, 9px,400);
-    
+    @include mobile {
+        padding: 40px 0 9px 0;
+        order: 2;
+    }
     
 }
 .footer__privacy-list {
     display: flex;
-    
+    @include mobile {
+        order:1;
+       padding: 20px 0 0 0;
+    }
 }
 .footer__privacy-list-icon {
     list-style-type: none;
