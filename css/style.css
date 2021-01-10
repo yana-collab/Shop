@@ -712,7 +712,7 @@ textarea {
 }
 
 .sale__item-name {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
@@ -772,6 +772,10 @@ textarea {
   position: relative;
 }
 
+.features__item:hover .features__item-button {
+  display: block;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .features__item {
     padding: 0 8px 16px 8px;
@@ -792,10 +796,10 @@ textarea {
   transform: translate(-50%, 0);
   font-size: 14px;
   line-height: 17px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   padding: 11px 16px 8px 13px;
   background-color: transparent;
-  border: 1px solid #FBFBFB;
+  border: 1px solid #fbfbfb;
 }
 
 .features__item-button:hover {
@@ -804,7 +808,7 @@ textarea {
 
 .features__item-content {
   width: 360px;
-  background: #FBFBFB;
+  background: #fbfbfb;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -845,9 +849,14 @@ textarea {
   line-height: 19px;
   font-weight: 400;
   color: #F16D7F;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   padding: 14px 38px;
   margin: 48px 0 0 0;
+}
+
+.features__button:hover {
+  background-color: #F16D7F;
+  color: #fbfbfb;
 }
 
 .advantages {
@@ -896,7 +905,7 @@ textarea {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-  color: #FBFBFB;
+  color: #fbfbfb;
   text-align: center;
   padding: 0 0 16px 0;
 }
@@ -1071,10 +1080,20 @@ textarea {
 
 .footer__subscribe-input {
   width: 256px;
-  height: 49px;
+  height: 48px;
   background-color: #E1E1E1;
   border-radius: 30px 0 0 30px;
-  border: none;
+  border: 1px solid #E1E1E1;
+  outline: none;
+}
+
+.footer__subscribe-input:hover, .footer__subscribe-input:focus {
+  opacity: .8;
+  border: 1px solid #F16D7F;
+}
+
+.footer__subscribe-input:active {
+  opacity: .5;
 }
 
 @media (min-width: 575px) and (max-width: 1599px) {
@@ -1100,17 +1119,26 @@ textarea {
 
 .footer__subscribe-button {
   width: 100px;
-  height: 51px;
+  height: 52px;
   background-color: #F16D7F;
   border: none;
   border-radius: 0px 30px 30px 0px;
-  margin-left: -7px;
-  color: #FBFBFB;
+  margin-left: -4px;
+  color: #fbfbfb;
   text-align: center;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  padding: 1px;
+  padding: 7px 7px 6px 8px;
+}
+
+.footer__subscribe-button:hover, .footer__subscribe-button:focus {
+  opacity: .8;
+  outline: none;
+}
+
+.footer__subscribe-button:active {
+  opacity: .5;
 }
 
 @media (min-width: 275px) and (max-width: 574px) {
@@ -1151,7 +1179,7 @@ textarea {
 }
 
 .footer__privacy-title {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 16px;
   line-height: 9px;
   font-weight: 400;
@@ -1180,8 +1208,16 @@ textarea {
   padding-left: 7px;
 }
 
+.footer__privacy-list-icon:hover, .footer__privacy-list-icon:focus {
+  opacity: .8;
+}
+
+.footer__privacy-list-icon:active {
+  opacity: .5;
+}
+
 .footer__privecy-button {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   border: none;
   width: 31px;
   height: 32px;
@@ -1189,4 +1225,158 @@ textarea {
 
 .footer__privecy-button__pink-bg {
   background-color: #F16D7F;
+}
+
+.registration-name {
+  background-color: #F8F3F4;
+  min-height: 148px;
+}
+
+.registration-title {
+  color: #F16D7F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  padding: 59px 0 60px 0;
+}
+
+.registration__container {
+  display: flex;
+  padding: 64px 0 96px 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .registration__container {
+    flex-direction: column;
+  }
+}
+
+.registration__content {
+  max-width: 360px;
+  padding: 0 128px 0 0;
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .registration__content {
+    width: 46%;
+  }
+}
+
+.registration__content-name {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #222222;
+  padding: 0 0 20px 0;
+}
+
+.registration__content-input {
+  max-width: 100%;
+  border: 1px solid #A4A4A4;
+  background-color: #FFFFFF;
+  padding: 12px 277px 16px 17px;
+  margin: 20px 0 0 0;
+}
+
+.registration__content-input:hover, .registration__content-input:focus {
+  border: 1px solid #F16D7F;
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .registration__content-input {
+    width: 24%;
+  }
+}
+
+::placeholder {
+  color: #B1B1B1;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.registration__content-radio {
+  border: 1px solid #A4A4A4;
+  box-sizing: border-box;
+  margin: 31px 10px 33px 0;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 300;
+}
+
+.registration__content-radio__second {
+  margin: 31px 10px 33px 20px;
+}
+
+label {
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 300;
+  color: #222222;
+}
+
+.registration__content-text {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 300;
+  color: #B1B1B1;
+  padding: 15px 0 39px 0;
+  width: 96%;
+}
+
+.registration__content-button {
+  background-color: #F16D7F;
+  border: none;
+  color: #fbfbfb;
+  padding: 16px 20px 17px 29px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.registration__content-button:active {
+  opacity: .5;
+}
+
+.registration__content-button:after {
+  content: url("../img/registration.svg");
+  color: #fbfbfb;
+  padding: 0 0 0 20px;
+}
+
+.registration__description {
+  max-width: 652px;
+  padding: 0 0 0 128px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .registration__description {
+    padding: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .registration__description {
+    padding: 40px 0 0 0;
+  }
+}
+
+.registration__description-title {
+  padding: 0 0 22px 0;
+}
+
+.registration__description-text {
+  padding: 0 0 21px 0;
+}
+
+.registration__description-loyalty {
+  padding: 0 0 16px 0;
+}
+
+.registration__description-loyalty::before {
+  content: url("../img/loyalty.svg");
+  padding: 0 23px 0 0;
 }

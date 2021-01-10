@@ -18,19 +18,27 @@
 .features__list {
     @include cardsWrap;
     text-align: left;
+    
 }
 .features__item {
     padding: 20px 0;
     position: relative;
+    &:hover {
+        .features__item-button {
+            display: block;
+        }
+    }
     @include mobile {
         padding: 0 8px 16px 8px;
     }
     
 }
+
 .features__item-img {
     @include mobile {
         width: 94%;
     }
+    
 }
 .features__item-button {
     display: none;
@@ -46,7 +54,7 @@
     border: 1px solid $white-color;
 
     &:hover {
-        background-color: $pink-color
+        background-color: $pink-color;
     }
 
 }
@@ -84,5 +92,8 @@
     background-color:$white-color;
     padding: 14px 38px;
     margin: 48px 0 0 0;
-    
+    &:hover {
+        background-color: $pink-color;
+        color:$white-color;
+    }
 }
