@@ -1,11 +1,13 @@
 .registration-name {
     background-color: $registration-bg;
     min-height: 148px;
+    display:flex;
+    
 }
 .registration-title {
     color: $pink-color;
     @include font (24px, 29px, 400);
-    padding: 59px 0 60px 0;
+    padding: 59px 0 60px 0px;
 }
 .registration__container {
     display: flex;
