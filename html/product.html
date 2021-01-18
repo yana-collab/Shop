@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/product.css" rel="stylesheet">
+    <title>Товар</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-2 d-flex">
+                <img src="../img/logo.svg" alt="Logo" class="header-logo">
+                <form class="header-form">
+                    <button class="header-button">
+                        <svg class="icon" width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.0596 17.6259C20.6713 15.8658 21.6282 13.6048 21.7698 11.2225C21.9113 8.84018 21.2288 6.48173 19.8369 4.54318C18.445 2.60463 16.4285 1.20404 14.126 0.576619C11.8234 -0.0508009 9.3751 0.13316 7.19217 1.09761C5.00923 2.06205 3.22463 3.74825 2.13804 5.87302C1.05145 7.9978 0.729054 10.4318 1.225 12.7661C1.72094 15.1005 3.00501 17.1932 4.86158 18.6927C6.71814 20.1922 9.03413 21.0072 11.4206 21.0009C13.673 21.004 15.8645 20.27 17.6606 18.9109L25.4086 26.7179C25.4941 26.807 25.5965 26.8781 25.7099 26.927C25.8232 26.9759 25.9452 27.0017 26.0686 27.0029C26.1923 27.0033 26.3148 26.9782 26.4283 26.9292C26.5419 26.8801 26.6441 26.8082 26.7286 26.7179C26.9025 26.537 26.9997 26.2958 26.9997 26.0449C26.9997 25.794 26.9025 25.5528 26.7286 25.3719L19.0596 17.6259ZM2.88662 10.5009C2.89946 8.81563 3.41094 7.17187 4.35659 5.77685C5.30224 4.38183 6.63972 3.29801 8.20044 2.662C9.76115 2.02599 11.4752 1.86627 13.1266 2.20298C14.7779 2.53969 16.2926 3.35775 17.4797 4.55404C18.6668 5.75033 19.4732 7.27129 19.7972 8.92519C20.1212 10.5791 19.9483 12.2919 19.3002 13.8476C18.6522 15.4034 17.5581 16.7325 16.1559 17.6674C14.7536 18.6023 13.1059 19.1011 11.4206 19.1009C9.14916 19.0901 6.97482 18.1784 5.37484 16.566C3.77486 14.9537 2.87998 12.7724 2.88662 10.5009Z" fill="#E8E8E8"/>
+                           </svg>
+                    </button>
+                </form>
+              </div>
+              <div class="col-3 offset-7">
+                <nav class="navbar navbar-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="../img/burger.svg" alt="menu" width="32" height="23">
+                      </a>
+                      <a class="navbar-brand" href="#">
+                        <img src="../img/header-reg.svg" alt="registration" width="29" height="29">
+                      </a>
+                      <a class="navbar-brand" href="#">
+                        <img src="../img/busket.svg" alt="basket" width="33" height="29">
+                      </a>
+                    </div>
+                  </nav>
+              </div>
+        </div>
+    </div>
+</header>
+<section class="title">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <h1 class="text-uppercase">new arrivals </h1>
+            </div>
+            <div class="col-3 offset-6">
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a class="text-uppercase" href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a class="text-uppercase" href="#">Man</a></li>
+                      <li class="breadcrumb-item" aria-current="page"><a class="text-uppercase" href="#">new arrivals</a></li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <img src="../img/featuresgirl.jpg" class="d-block w-50"  height="724" alt="girl">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/featureswoman.jpg" class="d-block w-50" height="724" alt="woman">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/sale_woman.jpg" class="d-block w-50" height="724"  alt="woman">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="black-arrow carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="pink-arrow carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+</section>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
