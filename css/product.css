@@ -265,3 +265,35 @@ margin-right: 10px;
     background: #222224;
     height: 79px;
 }
+
+.footer-socialmedia-text {
+    color: #FBFBFB;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    padding-top:30px;
+}
+
+.footer__socialmedia-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__socialmedia-list-icon {
+    list-style-type: none;
+    padding:24px 7px;
+    
+}
+
+.footer__socialmedia-button {
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    width: 31px;
+    height: 32px;
+    
+}
+
+.footer__socialmedia-button__pink-bg {
+    background: #F16D7F;
+}
