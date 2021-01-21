@@ -14,6 +14,7 @@
         min-height: 550px;
     }
 }
+
 .footer__content {
     background-color: $footer-bg-grey;
     height: 448px;
@@ -36,6 +37,7 @@
         align-items: center;
 }
 }
+
 .footer__content-contact {
     max-width:360px;
     padding: 87px 223px 126px 0;
@@ -48,10 +50,12 @@
         padding: 54px 0 59px 0;
 }
 }
+
 .footer__content-img {
     padding: 0 0 30px 126px;
     
 }
+
 .footer__content-text {
     min-height: 99px;
     @include font (20px, 24px, 400);
@@ -59,10 +63,12 @@
     color:$footer-bg-black;
     
 }
+
 .footer__content-italic {
     @include font (20px, 24px, 400);
     font-style: italic;
 }
+
 .footer__subscribe {
     padding: 150px 0 156px 200px;
     max-width:557px;
@@ -76,6 +82,7 @@
         
 }
 }
+
 .footer__subscribe-title {
     text-align: center;
     @include font (24px, 38px, 700);
@@ -89,6 +96,7 @@
        
     }   
 }
+
 .footer__subscribe-subtitle {
     padding: 0 0 32px 0;
     text-align: center;
@@ -102,6 +110,12 @@
         @include font (14px, 21px, 400);
     }   
 }
+
+.footer__subscribe-form {
+    display: flex;
+    justify-content: center;
+}
+
 .footer__subscribe-input {
     width: 256px;
     height: 48px;
@@ -119,13 +133,11 @@
     &:active {
         opacity: .5;
     }
-    @include inputTablet {
-        margin: 0 0 0 100px;
-    }
     @include inputMobile {
         width: 245px;
     }
 }
+
 ::placeholder {
     color:$footer-bg-black;
     @include font (14px, 17px,400);
@@ -133,13 +145,13 @@
     padding-left: 22px;
     
 }
+
 .footer__subscribe-button {
     width: 100px;
     height: 52px;
     background-color: $pink-color;
     border:none;
     border-radius: 0px 30px 30px 0px;
-    margin-left: -4px;
     color: $white-color;
     text-align: center;
     @include font(14px,17px,400);
@@ -155,22 +167,25 @@
         opacity: .5;
     }
     @include inputMobile {
-        width: 95px;
+       width:95px;
     }
 }
+
 .footer__privecy {
     background-color: $footer-bg-black;
-    min-height: 79px;
+    height: 79px;
+
     @include mobile {
         height: 143px;
         display: flex;
        
     }
 }
-.footer__privacy-content {
+
+.footer__privecy-content {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    
     @include tablet {
         width: 92%;
     }
@@ -180,41 +195,49 @@
         
     }
 }
-.footer__privacy-title {
+
+.footer__privecy-title {
     color:$white-color;
+    padding-top: 30px;
     @include font (16px, 9px,400);
     @include mobile {
-        padding: 40px 0 9px 0;
         order: 2;
+        padding-bottom: 10px;
     }
     
 }
-.footer__privacy-list {
+
+.footer__privecy-list {
     display: flex;
     @include mobile {
         order:1;
-       padding: 20px 0 0 0;
     }
 }
-.footer__privacy-list-icon {
+
+.footer__privecy-list-icon {
     list-style-type: none;
-    padding-left: 7px;
+    padding:23px 7px;
     &:hover,
     &:focus {
         opacity: .8;
-        
     }
 
     &:active {
         opacity: .5;
     }
+
+    @include mobile {
+        padding-top: 43px;
+    }
 }
+
 .footer__privecy-button {
     background-color: $white-color;
     border: none;
+    outline: none;
     width: 31px;
     height: 32px;
-    &__pink-bg {
+    &--pink-bg {
         background-color: $pink-color;
     }
 }

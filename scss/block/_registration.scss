@@ -2,11 +2,17 @@
     background-color: $registration-bg;
     min-height: 148px;
 }
+
 .registration-title {
     color: $pink-color;
     @include font (24px, 29px, 400);
     padding: 59px 0 60px 0;
+
+    @include mobile {
+        text-align: center;
+    }
 }
+
 .registration__container {
     display: flex;
     padding: 64px 0 96px 0;
@@ -14,21 +20,23 @@
         flex-direction: column;
     }
 }
+
 .registration__content {
-    max-width: 360px;
     padding: 0 128px 0 0;
     @include tablet {
         width: 46%;
     }
     
 }
+
 .registration__content-name {
     @include font (16px, 19px,300);
     color: $black-color;
     padding: 0 0 20px 0;
 }
+
 .registration__content-input {
-    max-width: 100%;
+    width: 360px;
     border: 1px solid #A4A4A4;
     background-color: #FFFFFF;
     padding: 12px 277px 16px 17px;
@@ -40,11 +48,17 @@
     @include tablet {
         width: 24%;
     }
+
+    @include mobile {
+        width: 10%;
+    }
 }
+
 ::placeholder {
     color:  #B1B1B1;
     @include font (13px, 16px, 300);
 }
+
 .registration__content-radio {
     border: 1px solid #A4A4A4;
     box-sizing: border-box;
@@ -55,6 +69,7 @@
         margin: 31px 10px 33px 20px;
     }
 }
+
 label {
     @include font (11px, 13px,300);
     color: $black-color;
@@ -66,6 +81,7 @@ label {
     padding: 15px 0 39px 0;
     width: 96%;
 }
+
 .registration__content-button {
     background-color:$pink-color;
     border: none;
@@ -77,7 +93,8 @@ label {
     &:active {
         opacity: .5;
     }
-    } 
+    
+} 
 
 .registration__content-button:after {
     content:url('../img/registration.svg');
@@ -85,6 +102,7 @@ label {
     padding: 0 0 0 20px;
     
 }
+
 .registration__description {
     max-width: 652px;
     padding: 0 0 0 128px;
@@ -96,15 +114,19 @@ label {
         padding: 40px 0 0 0;
     }
 }
+
 .registration__description-title {
     padding: 0 0 22px 0;
 }
+
 .registration__description-text {
     padding: 0 0 21px 0;
 }
+
 .registration__description-loyalty {
     padding: 0 0 16px 0;
 }
+
 .registration__description-loyalty::before {
     content: url('../img/loyalty.svg');
     padding: 0 23px 0 0;

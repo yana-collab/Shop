@@ -13,11 +13,11 @@
     }
 }
 
-.header_logo {
+.header__logo {
     margin: 18px 41px 0 0;
     }
     
-    .header_button{
+    .header__button{
         background-color: transparent;
         border: none;
         padding: 27px 0 0 0;
@@ -31,21 +31,27 @@
             opacity: .5;
         }
     }
+
+    .header__button:hover {
+        .header__navigation {
+            display: block;
+        }
+    }
     
     
-    .header_menu-list,
-    .header_wrp {
+    .header__menu-list,
+    .header__wrp {
         display: flex;
         align-items: center;
         
     }
     
-    .header_menu-item:not(:last-child){
+    .header__menu-item:not(:last-child){
         margin: 0 33px 0 0;
         
     }
-    .header_menu-item__registration,
-    .header_menu-item__basket {
+    .header__menu-item--registration,
+    .header__menu-item--basket {
         @include mobile {
             display: none;
         }
