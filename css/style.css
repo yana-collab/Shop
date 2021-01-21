@@ -406,6 +406,7 @@ textarea {
   border: none;
   padding: 27px 0 0 0;
 }
+<<<<<<< HEAD
 .header__button:hover, .header__button:focus {
   opacity: 0.8;
 }
@@ -415,6 +416,13 @@ textarea {
 
 .header__button:hover .header__navigation {
   display: block;
+=======
+.header_button:hover, .header_button:focus {
+  opacity: 0.8;
+}
+.header_button:active {
+  opacity: 0.5;
+>>>>>>> bootstrap
 }
 
 .header__menu-list,
@@ -428,8 +436,13 @@ textarea {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+<<<<<<< HEAD
   .header__menu-item--registration,
 .header__menu-item--basket {
+=======
+  .header_menu-item__registration,
+.header_menu-item__basket {
+>>>>>>> bootstrap
     display: none;
   }
 }
@@ -638,10 +651,17 @@ textarea {
     margin: 32px 0 0 0;
   }
 }
+<<<<<<< HEAD
 .sale__item--second {
   background-image: url("../img/sale_man.jpg");
 }
 .sale__item--third {
+=======
+.sale__item__second {
+  background-image: url("../img/sale_man.jpg");
+}
+.sale__item__third {
+>>>>>>> bootstrap
   background-image: url("../img/sale_kid.jpg");
 }
 
@@ -731,6 +751,14 @@ textarea {
   line-height: 17px;
   font-weight: 400;
 }
+<<<<<<< HEAD
+=======
+@media (min-width: 768px) and (max-width: 1599px) {
+  .features__description {
+    margin: 0 0 73px;
+  }
+}
+>>>>>>> bootstrap
 
 .features__list {
   display: flex;
@@ -757,6 +785,20 @@ textarea {
 .features__item:hover .features__item-button {
   display: block;
 }
+<<<<<<< HEAD
+=======
+@media (min-width: 320px) and (max-width: 767px) {
+  .features__item {
+    padding: 0 8px 16px 8px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .features__item-img {
+    width: 94%;
+  }
+}
+>>>>>>> bootstrap
 
 .features__item-button {
   display: none;
@@ -779,6 +821,14 @@ textarea {
   width: 360px;
   background: #fbfbfb;
 }
+<<<<<<< HEAD
+=======
+@media (min-width: 320px) and (max-width: 767px) {
+  .features__item-content {
+    width: 94%;
+  }
+}
+>>>>>>> bootstrap
 
 .features__item-title {
   font-size: 13px;
@@ -848,14 +898,22 @@ textarea {
   max-width: 360px;
   padding: 104px 0;
 }
+<<<<<<< HEAD
 .advantages__content--sale {
+=======
+.advantages__content__sale {
+>>>>>>> bootstrap
   padding: 0 30px;
 }
 
 .advantages__icon {
   padding: 0 155px 28px 159px;
 }
+<<<<<<< HEAD
 .advantages__icon--sale {
+=======
+.advantages__icon__sale {
+>>>>>>> bootstrap
   padding: 0 160px 19px 160px;
 }
 
@@ -1041,6 +1099,14 @@ textarea {
 }
 .footer__subscribe-input:active {
   opacity: 0.5;
+<<<<<<< HEAD
+=======
+}
+@media (min-width: 575px) and (max-width: 1599px) {
+  .footer__subscribe-input {
+    margin: 0 0 0 100px;
+  }
+>>>>>>> bootstrap
 }
 @media (min-width: 275px) and (max-width: 574px) {
   .footer__subscribe-input {
@@ -1137,6 +1203,7 @@ textarea {
   list-style-type: none;
   padding: 23px 7px;
 }
+<<<<<<< HEAD
 .footer__privecy-list-icon:hover, .footer__privecy-list-icon:focus {
   opacity: 0.8;
 }
@@ -1147,6 +1214,13 @@ textarea {
   .footer__privecy-list-icon {
     padding-top: 43px;
   }
+=======
+.footer__privacy-list-icon:hover, .footer__privacy-list-icon:focus {
+  opacity: 0.8;
+}
+.footer__privacy-list-icon:active {
+  opacity: 0.5;
+>>>>>>> bootstrap
 }
 
 .footer__privecy-button {
@@ -1156,7 +1230,11 @@ textarea {
   width: 31px;
   height: 32px;
 }
+<<<<<<< HEAD
 .footer__privecy-button--pink-bg {
+=======
+.footer__privecy-button__pink-bg {
+>>>>>>> bootstrap
   background-color: #F16D7F;
 }
 
