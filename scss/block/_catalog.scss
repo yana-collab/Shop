@@ -24,6 +24,7 @@
     }
 }
 
+
 .catalog__nav-list {
     display: flex;
     padding: 65px 0 66px 0;
@@ -153,3 +154,77 @@ padding-right: 28px;
     display: none;
 }
 
+.goods__list {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    grid-row-gap:30px;
+}
+
+.goods__item-button {
+    display:none;
+}
+
+.goods__item-content {
+    background: $grey-cards-color;
+    text-align: left;
+    padding-top:25px;
+}
+
+.goods__item-title {
+    padding-left: 18px;
+    @include font (13px, 15px, 400);
+    color: $black-color;
+}
+
+.goods__item-description {
+    padding:12px 0 18px 16px;
+    @include font (14px, 17px, 300);
+    color:$catalog-text;
+}
+
+.goods__item-price {
+    padding: 0 0 20px 18px;
+    color:$pink-color;
+    @include font (16px, 19px, 400);
+}
+
+.pagination {
+   padding:48px 0 0 558px;
+}
+
+.pagination-list {
+    display: flex;
+    border:1px solid $range-page;
+    width: 300px;
+    height: 44px;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+.pagination-list::before {
+    content: url('../img/arrow-open.svg');
+    width: 8px;
+    height: 14px;
+    padding-left: 15px;
+    
+}
+
+.pagination-list::after {
+    content: url('../img/arrow-close.svg');
+    width: 8px;
+    height: 14px;
+    padding-right: 15px;
+    
+}
+
+.pagination-item {
+    @include font (16px, 19px, 300);
+    color: $grey-color-des;
+
+    &--active {
+        color:$pink-color;
+    }
+}

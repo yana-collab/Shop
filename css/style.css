@@ -397,35 +397,35 @@ textarea {
   }
 }
 
-.header_logo {
+.header__logo {
   margin: 18px 41px 0 0;
 }
 
-.header_button {
+.header__button {
   background-color: transparent;
   border: none;
   padding: 27px 0 0 0;
 }
-.header_button:hover, .header_button:focus {
+.header__button:hover, .header__button:focus {
   opacity: 0.8;
 }
-.header_button:active {
+.header__button:active {
   opacity: 0.5;
 }
 
-.header_menu-list,
-.header_wrp {
+.header__menu-list,
+.header__wrp {
   display: flex;
   align-items: center;
 }
 
-.header_menu-item:not(:last-child) {
+.header__menu-item:not(:last-child) {
   margin: 0 33px 0 0;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .header_menu-item__registration,
-.header_menu-item__basket {
+  .header__menu-item--registration,
+.header__menu-item--basket {
     display: none;
   }
 }
@@ -1153,7 +1153,7 @@ textarea {
   width: 31px;
   height: 32px;
 }
-.footer__privecy-button__pink-bg {
+.footer__privecy-button--pink-bg {
   background-color: #F16D7F;
 }
 
@@ -1466,5 +1466,84 @@ label {
 
 .catalog__rotation-checkbox {
   display: none;
+}
+
+.goods__list {
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  grid-column-gap: 30px;
+  justify-content: center;
+  grid-row-gap: 30px;
+}
+
+.goods__item-button {
+  display: none;
+}
+
+.goods__item-content {
+  background: #F8F8F8;
+  text-align: left;
+  padding-top: 25px;
+}
+
+.goods__item-title {
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.goods__item-description {
+  padding: 12px 0 18px 16px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #636363;
+}
+
+.goods__item-price {
+  padding: 0 0 20px 18px;
+  color: #F16D7F;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.pagination {
+  padding: 48px 0 0 558px;
+}
+
+.pagination-list {
+  display: flex;
+  border: 1px solid #EBEBEB;
+  width: 300px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-list::before {
+  content: url("../img/arrow-open.svg");
+  width: 8px;
+  height: 14px;
+  padding-left: 15px;
+}
+
+.pagination-list::after {
+  content: url("../img/arrow-close.svg");
+  width: 8px;
+  height: 14px;
+  padding-right: 15px;
+}
+
+.pagination-item {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #9F9F9F;
+}
+.pagination-item--active {
+  color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
